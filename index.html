@@ -1,61 +1,831 @@
-<head>
-<!--<META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=Shift_JIS">-->
-<META HTTP-EQUIV="Content-Type" charset="utf-8">
-<TITLE>List of Recommended Drinks</TITLE>
-</HEAD>
-<BODY background="./bk2.png">
-<NOSCRIPT>
-JAVASCRIPT
-</NOSCRIPT>
-<br>
-<font size="5" face="serif">
-&#8251; <a href="ListedDrinks.pdf">Here</a> is the full list of today's possible drinks
-<HR style="color : navy;">
-</font>
-<IMG src="./title.png" alt="title" width="600" border="0"><BR>
-<font size="5" face="Comic Sans MS">
-<div align="left">
-<p>
-<a href="GinBase/WhiteLadyEurope.JPG"><img src="GinBase/WhiteLadyEurope_optim.JPG" alt="No Image" height="216" align="left"></a>
-</p>
-<p>
-&emsp;
-<a href="GinBase/WhiteLadyEurope.JPG">White Lady (Europian original)</a>
-<br>
-&emsp;&emsp;&#9787; Dry Gin 50ml
-<br>
-&emsp;&emsp;&#9787; White Cura&#231;ao 25ml
-<br>
-&emsp;&emsp;&#9787; Lemon Juice 25ml
-<br>
-&emsp;&emsp;&#9787; Symple Syrup 2tsp
-<br>
-&emsp;&emsp;&#9787; Egg White 1
-<!--<br><br>
-&nbsp;
-<a href="Lattice2013.pdf">see on this server</a>-->
-<br clear="left">
-</p>
-<p>
-<a href="RumBase/Mojito.JPG"><img src="RumBase/Mojito_optim.JPG" alt="No Image" height="216" align="left"></a>
-&emsp;
-<a href="RumBase/Mojito.JPG">Mojito</a>
-<br>
-&emsp;&emsp;&#9787; White Rum 45ml
-<br>
-&emsp;&emsp;&#9787; Tonic Water
-<br>
-&emsp;&emsp;&#9787; Sugar 2tbsp
-<br>
-&emsp;&emsp;&#9787; Lime 4slices
-<br>
-&emsp;&emsp;&#9787; Mint 6-10 leaves
-<br clear="left">
-</p>
-</div>
-</font>
 
-<HR style="color : navy;">
-<!--<A HREF="../">[Parent Directory]</A>
-<A HREF="../../">[Top]</A>-->
-</HTML>
+<!--<IMG src="./title.png" alt="title" width="600" border="0"><BR>
+    <div id = "drinkcontainer">
+        <div class = "drink">
+            <a href="GinBase/WhiteLadyEurope.JPG"><img src="GinBase/WhiteLadyEurope_optim.JPG" alt="No Image" height="216" align="left"></a>
+            <ul class = "list">
+            <a href="GinBase/WhiteLadyEurope.JPG"> White European Lady </a>  
+            <li> &emsp;&emsp;&#9787; Dry Gin 50ml </li>
+            <li> &emsp;&emsp;&#9787; White Cura&#231;ao 25ml </li>
+            <li> &emsp;&emsp;&#9787; Lemon Juice 25ml </li>
+            <li> &emsp;&emsp;&#9787; Symple Syrup 2tsp </li>
+            <li> &emsp;&emsp;&#9787; Egg White 1 </li>
+            </ul>
+        </div> 
+<br><br>
+&nbsp;
+<a href="Lattice2013.pdf">see on this server</a>
+        <br clear="left">
+        <p></p>
+
+   <div class= "drink">
+            <a href="RumBase/Mojito.JPG"><img src="RumBase/Mojito_optim.JPG" alt="No Image" height="216" align="left"></a>
+            <ul class = "list"> 
+            <a href="RumBase/Mojito.JPG">Mojito</a>
+            <li> &emsp;&emsp;&#9787; White Rum 45ml </li> 
+            <li> &emsp;&emsp;&#9787; Tonic Water </li> 
+            <li> &emsp;&emsp;&#9787; Sugar 2tbsp </li> 
+            <li> &emsp;&emsp;&#9787; Lime 4slices </li> 
+            <li> &emsp;&emsp;&#9787; Mint 6-10 leaves </li> 
+            <br clear="left">
+        </div>
+
+   </div>
+<hr>
+<A HREF="../">[Parent Directory]</A>
+<A HREF="../../">[Top]</A>
+
+--> 
+
+<!DOCTYPE html>
+<html>
+<head> 
+   <meta charset="utf-8">
+   <title> Cocktails by Masaaki Tomii </title> 
+   <link rel="shortcut icon" href="img/favicon.ico"/>
+   <script src="jquery-3.0.0.min.js"></script> 
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>  
+$(document).ready(function(){
+   $("#drink1").click(function(){
+       $("#list1").toggle("slow");
+     });
+});
+
+</script> 
+
+</head> 
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+ul {
+    list-style: none;
+}
+
+.name {
+    padding: 5px; 
+    text-align:center; 
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+.subtitle {
+    font-size: 32px;
+
+}
+
+.footer {
+    text-align:center;
+    padding:32px;
+}
+
+.list { 
+    margin: 0 auto;
+    max-width: 100%;
+    margin-left:26%;
+    display:none;
+   
+}
+
+#group {
+    font-size: 4em;
+    text-align: center;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .subtitle {
+        font-size: 75%;
+    }
+}
+
+@media (max-width: 600px) {
+    .list { 
+    font-size: 75%;
+    }
+}
+
+#drink1 {
+    text-align: center;
+}
+#drink2 {
+    text-align: center;
+}
+#drink3 {
+    text-align: center;
+}
+#drink4 {
+    text-align: center;
+}
+#drink5 {
+    text-align: center;
+}
+#drink6 {
+    text-align: center;
+}
+#drink7 {
+    text-align: center;
+}
+#drink8 {
+    text-align: center;
+}
+#drink9 {
+    text-align: center;
+}
+#drink10 {
+    text-align: center;
+}
+#drink11 {
+    text-align: center;
+}
+#drink12{
+    text-align: center;
+}
+#drink13 {
+    text-align: center;
+}
+#drink14 {
+    text-align: center;
+}
+#drink15 {
+    text-align: center;
+}
+#drink16 {
+    text-align: center;
+}
+#drink17 {
+    text-align: center;
+}
+#drink18 {
+    text-align: center;
+}
+
+#drink19 {
+    text-align: center;
+}
+
+#drink20 {
+    text-align: center;
+}
+
+#drink21 {
+    text-align: center;
+}
+
+#drink22 {
+    text-align: center;
+}
+
+#drink23 {
+    text-align: center;
+}
+
+#drink24 {
+    text-align: center;
+}
+
+#drink25 {
+    text-align: center;
+}
+
+#drink26 {
+    text-align: center;
+}
+
+#drink27 {
+    text-align: center;
+}
+
+#drink28 {
+    text-align: center;
+}
+
+#drink29 {
+    text-align: center;
+}
+
+#drink30 {
+    text-align: center;
+}
+
+#drink31 {
+    text-align: center;
+}
+
+#drink32 {
+    text-align: center;
+}
+
+#drink33 {
+    text-align: center;
+}
+
+#drink34 {
+    text-align: center;
+}
+
+#drink35 {
+    text-align: center;
+}
+
+#drink36 {
+    text-align: center;
+}
+
+
+#list1 {
+    margin-left: -30px;
+    text-align: center;
+}
+
+#list2 {
+    margin-left: -30px;
+    text-align: center;
+}
+#list3 {
+    margin-left: -30px;
+    text-align: center;
+}
+#list4 {
+    margin-left: -30px;
+    text-align: center;
+}
+#list5 {
+        margin-left: -30px;
+    text-align: center;
+}
+#list6 {
+      margin-left: -30px;
+    text-align: center;
+}
+#list7 {
+      margin-left: -30px;
+    text-align: center;
+}
+#list8 {
+      margin-left: -30px;
+    text-align: center;
+}
+#list9 {
+      margin-left: -30px;
+    text-align: center;
+}
+#list10 {
+      margin-left: -30px;
+    text-align: center;
+}
+#list11 {
+      margin-left: -30px;
+    text-align: center;
+}
+#list12{
+      margin-left: -30px;
+    text-align: center;
+}
+#list13 {
+      margin-left: -30px;
+    text-align: center;
+}
+#list14 {
+      margin-left: -30px;
+    text-align: center;
+}
+#list15 {
+      margin-left: -30px;
+    text-align: center;
+}
+#list16 {
+      margin-left: -30px;
+    text-align: center;
+}
+#list17 {
+      margin-left: -30px;
+    text-align: center;
+}
+#list18 {
+      margin-left: -30px;
+    text-align: center;
+}
+
+#list19 {
+      margin-left: -30px;
+    text-align: center;
+}
+
+#list20 {
+      margin-left: -30px;
+    text-align: center;
+}
+
+#list21 {
+      margin-left: -30px;
+    text-align: center;
+}
+
+#list22 {
+      margin-left: -30px;
+    text-align: center;
+}
+
+#list23 {
+      margin-left: -30px;
+    text-align: center;
+}
+
+#list24 {
+      margin-left: -30px;
+    text-align: center;
+}
+
+#list25 {
+      margin-left: -30px;
+    text-align: center;
+}
+
+#list26 {
+      margin-left: -30px;
+    text-align: center;
+}
+
+#list27 {
+      margin-left: -30px;
+    text-align: center;
+}
+
+#list28 {
+      margin-left: -30px;
+    text-align: center;
+}
+
+
+#list29 {
+      margin-left: -30px;
+    text-align: center;
+}
+
+#list30 {
+      margin-left: -30px;
+    text-align: center;
+}
+
+#list31 {
+      margin-left: -30px;
+    text-align: center;
+}
+
+#list32 {
+      margin-left: -30px;
+    text-align: center;
+}
+
+#list33 {
+      margin-left: -30px;
+    text-align: center;
+}
+
+#list34 {
+      margin-left: -30px;
+    text-align: center;
+}
+
+#list35 {
+      margin-left: -30px;
+    text-align: center;
+}
+
+#list36 {
+      margin-left: -30px;
+    text-align: center;
+}
+
+</style>
+<body>
+
+<div id="drinkmenu">
+    &#8251; <a href="ListedDrinks.pdf">Here</a> is the full list of today's possible drinks
+    <hr/>
+</div>
+
+<!-- Header -->
+<div class="header">
+  <h1> <img src="img/title.png" style="width:100%"></h1>
+  <p class="subtitle"> Cocktails created by Masaaki Tomii </p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column"> 
+    <img src="img/drink1.jpg" style="width:100%">
+         <h1 id="drink1"> White Lady (Japanese) </h1> 
+         <ul id="list1" class= "ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul> 
+    <img src="img/drink2.jpg" style="width:100%">
+          <h1 id="drink2"> White Lady European Original** </h1> 
+          <ul id="list2" class= "ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul> 
+    <img src="img/drink3.jpg" style="width:100%">
+         <h1 id="drink3" > Pink Lady </h1> 
+          <ul id="list3" class= "ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul> 
+
+    <img src="img/drink4.jpg" style="width:100%">
+         <h1 id="drink4" > Waikiki Beachcomber </h1> 
+          <ul id="list4" class= "ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul> 
+
+    <img src="img/drink5.jpg" style="width:100%">
+         <h1 id="drink5" > Grenadine Fizz </h1> 
+          <ul id="list5" class= "ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul> 
+
+    <img src="img/drink6.jpg" style="width:100%">
+         <h1 id="drink6" > Gin Tonic </h1> 
+          <ul id="list6" class= "ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul> 
+
+    <img src="img/drink7.jpg" style="width:100%">
+         <h1 id="drink6" > Gimlet </h1> 
+          <ul id="list7" class= "ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul> 
+
+    <img src="img/drink8.jpg" style="width:100%">
+          <h1 id="drink7"> Pink Pussycat </h1> 
+          <ul id="list8" class= "ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul> 
+
+    <img src="img/drink9.jpg" style="width:100%">
+         <h1 id="drink9" > Moscow Mule </h1> 
+          <ul id="list9" class= "ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul> 
+
+ </div>
+<div class="column"> 
+    <img src="img/drink1.jpg" style="width:100%">
+         <h1 id="drink10"> Vodka Gimlet </h1> 
+          <ul id="list10" class= "ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul> 
+    <img src="img/drink2.jpg" style="width:100%">
+        <h1 id="drink11"> Kamikaze </h1>
+          <ul id="list11" class= "ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul>  
+    <img src="img/drink3.jpg" style="width:100%"> 
+         <h1 id="drink12"> Screw Driver </h1> 
+          <ul id="list12" class= "ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul> 
+
+    <img src="img/drink4.jpg" style="width:100%">
+         <h1 id="drink13"> Balalaika </h1> 
+          <ul id="list13" class= "ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul> 
+
+    <img src="img/drink5.jpg" style="width:100%">
+         <h1 id="drink14"> Smurai </h1> 
+          <ul id="list14" class= "ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul> 
+
+    <img src="img/drink6.jpg" style="width:100%">
+         <h1 id="drink15"> Sakenic </h1> 
+          <ul id="list15" class= "ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul> 
+
+    <img src="img/drink7.jpg" style="width:100%">
+         <h1 id="drink16"> Sake Sour </h1> 
+          <ul id="list16" class= "ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul> 
+
+    <img src="img/drink8.jpg" style="width:100%">
+         <h1 id="drink17"> Sake Sour </h1> 
+          <ul id="list17" class= "ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul> 
+
+    <img src="img/drink9.jpg" style="width:100%">
+         <h1 id="drink18"> Nadeshiko </h1> 
+          <ul id="list18" class= "ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul> 
+
+ </div><div class="column"> 
+    <img src="img/drink1.jpg" style="width:100%">
+         <h1 id="drink19"> Salty Grapefruit </h1> 
+          <ul id="list19" class= "ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul> 
+    <img src="img/drink2.jpg" style="width:100%">
+        
+         <h1 id="drink20"> Orange Breeze </h1> 
+          <ul id="list20" class= "ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul> 
+    <img src="img/drink3.jpg" style="width:100%">
+         <h1 id="drink21"> Cinderella </h1> 
+          <ul id="list21" class= "ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul> 
+
+    <img src="img/drink4.jpg" style="width:100%">
+         <h1 id="drink22"> Fruit Punch </h1> 
+          <ul id="list22" class= "ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul> 
+
+    <img src="img/drink5.jpg" style="width:100%">
+         <h1 id="drink23"> Shirley Temple </h1> 
+          <ul id="list23" class= "ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul> 
+
+    <img src="img/drink6.jpg" style="width:100%">
+         <h1 id="drink24"> Saratoga Cooler (Non-Alcohol Moscow Mule)</h1> 
+          <ul id="list24" class= "ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul> 
+
+    <img src="img/drink7.jpg" style="width:100%">
+         <h1 id="drink25"> Summer Delight </h1> 
+          <ul id="list25" class= "ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul> 
+
+    <img src="img/drink8.jpg" style="width:100%">
+         <h1 id="drink26"> Pussycat </h1> 
+          <ul id="list26" class= "ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul> 
+
+    <img src="img/drink9.jpg" style="width:100%">
+         <h1 id="drink27"> Yellow Over Blue </h1> 
+          <ul id="list27" class= "ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul> 
+
+ </div><div class="column"> 
+    <img src="img/drink1.jpg" style="width:100%">
+         <h1 id="drink28"> Hawaiian </h1> 
+          <ul id="list28" class= "ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul> 
+    
+    <img src="img/drink2.jpg" style="width:100%">
+          <h1 id="drink29"> Volcanic </h1> 
+          <ul id="list29" class= "ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul> 
+    
+    <img src="img/drink3.jpg" style="width:100%">
+         <h1 id="drink30"> Mimosa </h1> 
+          <ul id="list30" class="ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul> 
+
+    <img src="img/drink4.jpg" style="width:100%">
+         <h1 id="drink31"> Bloody Mary </h1> 
+          <ul id="list31" class= "ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul> 
+
+    <img src="img/drink5.jpg" style="width:100%">
+         <h1 id="drink32"> Godfather </h1> 
+          <ul id="list32" class= "ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul> 
+
+    <img src="img/drink6.jpg" style="width:100%">
+          <h1 id="drink33"> Long Island Iced Tea </h1> 
+          <ul id="list33" class= "ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul> 
+
+    <img src="img/drink7.jpg" style="width:100%">
+         <h1 id="drink34"> Electric Eel </h1> 
+          <ul id="list34" class= "ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul> 
+
+    <img src="img/drink8.jpg" style="width:100%">
+         <h1 id="drink35"> Tom Collins </h1> 
+          <ul id="list35" class= "ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul> 
+
+    <img src="img/drink9.jpg" style="width:100%">
+         <h1 id="drink36"> Almost Famous </h1> 
+          <ul id="list36" class= "ingredientlist"> 
+            <li> Ingredient 1 </li> 
+            <li> Ingredient 2 </li> 
+            <li> Ingredient 3 </li> 
+            <li> Ingredient 4 </li> 
+            <li> Ingredient 5 </li>
+         </ul> 
+
+    </div>
+</div> 
+
+<footer class="footer"> 
+  <p> Copyright &copy; Masaaki's Cocktails List 2018 </p> 
+</footer> 
+
+
+</body>
+</html>
+
