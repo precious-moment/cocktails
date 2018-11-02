@@ -1,831 +1,545 @@
-
-<!--<IMG src="./title.png" alt="title" width="600" border="0"><BR>
-    <div id = "drinkcontainer">
-        <div class = "drink">
-            <a href="GinBase/WhiteLadyEurope.JPG"><img src="GinBase/WhiteLadyEurope_optim.JPG" alt="No Image" height="216" align="left"></a>
-            <ul class = "list">
-            <a href="GinBase/WhiteLadyEurope.JPG"> White European Lady </a>  
-            <li> &emsp;&emsp;&#9787; Dry Gin 50ml </li>
-            <li> &emsp;&emsp;&#9787; White Cura&#231;ao 25ml </li>
-            <li> &emsp;&emsp;&#9787; Lemon Juice 25ml </li>
-            <li> &emsp;&emsp;&#9787; Symple Syrup 2tsp </li>
-            <li> &emsp;&emsp;&#9787; Egg White 1 </li>
-            </ul>
-        </div> 
-<br><br>
-&nbsp;
-<a href="Lattice2013.pdf">see on this server</a>
-        <br clear="left">
-        <p></p>
-
-   <div class= "drink">
-            <a href="RumBase/Mojito.JPG"><img src="RumBase/Mojito_optim.JPG" alt="No Image" height="216" align="left"></a>
-            <ul class = "list"> 
-            <a href="RumBase/Mojito.JPG">Mojito</a>
-            <li> &emsp;&emsp;&#9787; White Rum 45ml </li> 
-            <li> &emsp;&emsp;&#9787; Tonic Water </li> 
-            <li> &emsp;&emsp;&#9787; Sugar 2tbsp </li> 
-            <li> &emsp;&emsp;&#9787; Lime 4slices </li> 
-            <li> &emsp;&emsp;&#9787; Mint 6-10 leaves </li> 
-            <br clear="left">
-        </div>
-
-   </div>
-<hr>
-<A HREF="../">[Parent Directory]</A>
-<A HREF="../../">[Top]</A>
-
---> 
-
 <!DOCTYPE html>
-<html>
-<head> 
-   <meta charset="utf-8">
-   <title> Cocktails by Masaaki Tomii </title> 
-   <link rel="shortcut icon" href="img/favicon.ico"/>
-   <script src="jquery-3.0.0.min.js"></script> 
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>  
-$(document).ready(function(){
-   $("#drink1").click(function(){
-       $("#list1").toggle("slow");
-     });
-});
+<head>
 
-</script> 
-
-</head> 
-<style>
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: Arial;
-}
-
-ul {
-    list-style: none;
-}
-
-.name {
-    padding: 5px; 
-    text-align:center; 
-}
-
-.header {
-    text-align: center;
-    padding: 32px;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-}
-
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
-}
-
-.subtitle {
-    font-size: 32px;
-
-}
-
-.footer {
-    text-align:center;
-    padding:32px;
-}
-
-.list { 
-    margin: 0 auto;
-    max-width: 100%;
-    margin-left:26%;
-    display:none;
-   
-}
-
-#group {
-    font-size: 4em;
-    text-align: center;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media (max-width: 800px) {
-    .column {
-        flex: 50%;
-        max-width: 50%;
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Masaaki's Cocktail List</title>
+	<meta name="description" content="Cocktails craeted by Masaaki Tomii">
+	<meta name="keywords" content="drinks, cocktails, beverages, recipes ">
+	<meta http-equiv="cleartype" content="on">
+	<link rel="shortcut icon" href="img/favicon.ico"/>
+	<script src="jquery-3.0.0.min.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/html5reset.css" media="all">
+	<link rel="stylesheet" href="css/col.css" media="all">
+	<link rel="stylesheet" href="css/2cols.css" media="all">
+	<link rel="stylesheet" href="css/3cols.css" media="all">
+	<link rel="stylesheet" href="css/4cols.css" media="all">
+	<link rel="stylesheet" href="css/5cols.css" media="all">
+	<link rel="stylesheet" href="css/6cols.css" media="all">
+	<link rel="stylesheet" href="css/7cols.css" media="all">
+	<link rel="stylesheet" href="css/8cols.css" media="all">
+	<link rel="stylesheet" href="css/9cols.css" media="all">
+	<link rel="stylesheet" href="css/10cols.css" media="all">
+	<link rel="stylesheet" href="css/11cols.css" media="all">
+	<link rel="stylesheet" href="css/12cols.css" media="all">
+	<style type="text/css">
+	body { 
+		padding:2em; 
+		font: 100%/1.4 'Helvetica Neue', arial, helvetica, helvetica, sans-serif; 	
     }
+	h1 { 
+		font-size:2.2em; 
+		padding:0 0 .5em 0; 
+	}
+	h2 { 
+		font-size:1.5em;
+	}
+	h3 { 
+		font-size:1em;
+	}
+	li { 
+		vertical-align: middle; 
+	}
+	.header { 
+	     margin: 0 auto; 
+	     text-align:center; 
+	     width:100%;
+	}
+	.col { 
+		 background: #fff;
+	     padding:1em 0; 
+	     text-align:center;
+	     display:block;
+	     z-index:0;
+	}
+
+	.overlay {
+	  	position: absolute;
+	  	height: 50%;
+	  	width: 23.8%;
+	  	opacity: 0;
+	  	transition: .5s ease;
+	  	background-color: #008CBA;
+	}
+
+	.text {
+		color: white;
+		font-size: 12px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		text-align: center;
+		}
+			  
+     #footer {
+     	margin: 0 auto;
+     	text-align:center;
+     }
+
+@media only screen and (max-width: 900px) {
+	h2 {
+	    font-size:1em;
+	}
+
+	.text { 
+ 	    font-size:10px;
+	}
+
+}
+@media only screen and (max-width: 480px) {
+	h2 {
+	    font-size:1em;
+	}
+
+	.text { 
+ 	    font-size:10px;
+	}
+
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-    .column {
-        flex: 100%;
-        max-width: 100%;
-    }
-}
+	</style>
+	<script> 
 
-@media (max-width: 600px) {
-    .subtitle {
-        font-size: 75%;
-    }
-}
+	
 
-@media (max-width: 600px) {
-    .list { 
-    font-size: 75%;
-    }
-}
-
-#drink1 {
-    text-align: center;
-}
-#drink2 {
-    text-align: center;
-}
-#drink3 {
-    text-align: center;
-}
-#drink4 {
-    text-align: center;
-}
-#drink5 {
-    text-align: center;
-}
-#drink6 {
-    text-align: center;
-}
-#drink7 {
-    text-align: center;
-}
-#drink8 {
-    text-align: center;
-}
-#drink9 {
-    text-align: center;
-}
-#drink10 {
-    text-align: center;
-}
-#drink11 {
-    text-align: center;
-}
-#drink12{
-    text-align: center;
-}
-#drink13 {
-    text-align: center;
-}
-#drink14 {
-    text-align: center;
-}
-#drink15 {
-    text-align: center;
-}
-#drink16 {
-    text-align: center;
-}
-#drink17 {
-    text-align: center;
-}
-#drink18 {
-    text-align: center;
-}
-
-#drink19 {
-    text-align: center;
-}
-
-#drink20 {
-    text-align: center;
-}
-
-#drink21 {
-    text-align: center;
-}
-
-#drink22 {
-    text-align: center;
-}
-
-#drink23 {
-    text-align: center;
-}
-
-#drink24 {
-    text-align: center;
-}
-
-#drink25 {
-    text-align: center;
-}
-
-#drink26 {
-    text-align: center;
-}
-
-#drink27 {
-    text-align: center;
-}
-
-#drink28 {
-    text-align: center;
-}
-
-#drink29 {
-    text-align: center;
-}
-
-#drink30 {
-    text-align: center;
-}
-
-#drink31 {
-    text-align: center;
-}
-
-#drink32 {
-    text-align: center;
-}
-
-#drink33 {
-    text-align: center;
-}
-
-#drink34 {
-    text-align: center;
-}
-
-#drink35 {
-    text-align: center;
-}
-
-#drink36 {
-    text-align: center;
-}
-
-
-#list1 {
-    margin-left: -30px;
-    text-align: center;
-}
-
-#list2 {
-    margin-left: -30px;
-    text-align: center;
-}
-#list3 {
-    margin-left: -30px;
-    text-align: center;
-}
-#list4 {
-    margin-left: -30px;
-    text-align: center;
-}
-#list5 {
-        margin-left: -30px;
-    text-align: center;
-}
-#list6 {
-      margin-left: -30px;
-    text-align: center;
-}
-#list7 {
-      margin-left: -30px;
-    text-align: center;
-}
-#list8 {
-      margin-left: -30px;
-    text-align: center;
-}
-#list9 {
-      margin-left: -30px;
-    text-align: center;
-}
-#list10 {
-      margin-left: -30px;
-    text-align: center;
-}
-#list11 {
-      margin-left: -30px;
-    text-align: center;
-}
-#list12{
-      margin-left: -30px;
-    text-align: center;
-}
-#list13 {
-      margin-left: -30px;
-    text-align: center;
-}
-#list14 {
-      margin-left: -30px;
-    text-align: center;
-}
-#list15 {
-      margin-left: -30px;
-    text-align: center;
-}
-#list16 {
-      margin-left: -30px;
-    text-align: center;
-}
-#list17 {
-      margin-left: -30px;
-    text-align: center;
-}
-#list18 {
-      margin-left: -30px;
-    text-align: center;
-}
-
-#list19 {
-      margin-left: -30px;
-    text-align: center;
-}
-
-#list20 {
-      margin-left: -30px;
-    text-align: center;
-}
-
-#list21 {
-      margin-left: -30px;
-    text-align: center;
-}
-
-#list22 {
-      margin-left: -30px;
-    text-align: center;
-}
-
-#list23 {
-      margin-left: -30px;
-    text-align: center;
-}
-
-#list24 {
-      margin-left: -30px;
-    text-align: center;
-}
-
-#list25 {
-      margin-left: -30px;
-    text-align: center;
-}
-
-#list26 {
-      margin-left: -30px;
-    text-align: center;
-}
-
-#list27 {
-      margin-left: -30px;
-    text-align: center;
-}
-
-#list28 {
-      margin-left: -30px;
-    text-align: center;
-}
-
-
-#list29 {
-      margin-left: -30px;
-    text-align: center;
-}
-
-#list30 {
-      margin-left: -30px;
-    text-align: center;
-}
-
-#list31 {
-      margin-left: -30px;
-    text-align: center;
-}
-
-#list32 {
-      margin-left: -30px;
-    text-align: center;
-}
-
-#list33 {
-      margin-left: -30px;
-    text-align: center;
-}
-
-#list34 {
-      margin-left: -30px;
-    text-align: center;
-}
-
-#list35 {
-      margin-left: -30px;
-    text-align: center;
-}
-
-#list36 {
-      margin-left: -30px;
-    text-align: center;
-}
-
-</style>
+</script>
+</head>
 <body>
+	<div class="container"> 
+	   <div class="header">
+        &#8251; <a href="ListedDrinks.pdf">Here</a> is the full list of today's possible drinks
+        <hr/>
+        </div>
+		<div class="header">
+		<div id="banner"> 
+			<img src="img/title.png" height="100%" width="100%">
+		</div>
+	    <h2 id="title"> Cocktails created by Masaaki Tomii</h2>
+		</div>
+	    <div> 
+			<br> 
+			<div class="section group">
+				<h2>Gin-Based</h2>
+			</div>
+			<br> 
+				<div class="section group">
+				    <div class="col span_1_of_4">
+						<h3> 1.1 White Lady (Japanese) </h3> 
+					    <div class="overlay" style="background-color:#f2f7eb;">
+	                         <div class="text" style="color:#141414;">
+	                         	<li> Dry Gin 30ml </li> 
+							    <li> White Curaçao 15ml </li> 
+							    <li> Lemon Juice </li> 
+							    <li> Lemon slice or cut (optional) </li>
+							    <li> Made by <i>Shake</i> </li> 
+							    <br> 
+							    <i> Milky-white as the name says. Slightly transparent. Turns to Side Car by using Brandy instead of Dry Gin. Turns to Yellow Lady by using Orange Juice instead of Lemon Juice. </i> 
+	                         </div>
+	                    </div>
+	                    <img src="img/white_Lady_Japanese.png" height="63%" width="63%">
+					</div>
+					<div class="col span_1_of_4">
+					<h3> 1.2 White Lady (European) </h3> 
+					  <div class="overlay" style="background-color:#ece9e0;">
+	                         <div class="text" style="color:#141414;">
+	                         	<li> Dry Gin 50ml </li> 
+							    <li> White Curaçao 15ml </li> 
+							    <li> Lemon Juice 25ml </li> 
+							    <li> Simple Syrup 10ml </li> 
+							    <li> Lemon Slice or Cut (optional) </li>
+							    <li> Made by <i>Shake</i> </li> 
+							    <br> 
+							    <i> More foamy and fluffy because of Egg White. </i> 
+	                         </div>
+	                    </div>
+	                   <img src="img/white_Lady_European.png" height="93%" width="93%">
+					</div>
+					<div class="col span_1_of_4">	
+					<h3> 1.3 Pink Lady </h3> 
+					<div class="overlay" style="background-color:#ea769a;">
+	                    <div class="text">
+	                         	<li> Dry Gin 40ml </li> 
+							    <li> Grenadine Syrup 20ml </li> 
+							    <li> Egg White 1 </li> 
+							    <li> Made by <i>Shake</i> </li> 
+							    <br>
+							    <i> Made to commemorate the stage “Pink Lady”, which originated in London and broke was a big hit. Given to the starring actress at the final party. </i>
+	                         </div>
+	                    </div>
+	                <img src="img/pink_Lady.png" height="78%" width="78%">
+	                </div> 
+					<div class="col span_1_of_4">
+					<h3> 1.4 Waikiki Beachcomber </h3> 
+					<div class="overlay" style="background-color:#997300;" >
+					     <div class="text">
+	                         	<li> Dry Gin 20ml </li> 
+							    <li> White Curaçao 20ml </li> 
+							    <li> Pineapple Juice 20ml or 1tbsp </li> 
+							    <li> Made by <i>Shake</i> </li>
+							    <br> 
+							    <i> Pineapple taste makes it tropical. Orange flavor of White Curacao contributes refreshingly. </i>
+							</div>
+	                    </div>
+					<img src="img/waikiki_Beachcomber.png" height="66.7%" width="66.7%">
+				    </div>
+				 </div> 
+				 <div class="section group">
+   					<div class="col span_1_of_4">
+				    <h3> 1.5 Grenadine Fizz </h3> 
+				    <div class="overlay" style="background-color:#cd1b16;" >
+				    <div class="text">
+	                         	<li> Dry Gin 45ml </li> 
+							    <li> Lemon Juice 20ml </li> 
+							    <li> Grenadine Syrup 20ml </li> 
+							    <li> Sparkling Water </li>
+							    <li> Maraschino Cherry & Lemon Slice (optional)</li>
+							    <li> Made by <i>Shake</i> w/o soda, <i>Build</i> w/ soda, put cherry & lemon slice pierece by a pin</li>
+							    <br> 
+							    <i> Refreshing taste made by mixing sweet grenadine syrup, lemon juice and soda.</i>
+							</div>
+	                    </div>
+				    <img src="img/grenadine_Fizz.png" height="62.5%" width="62.5%">
+					</div>
+					<div class="col span_1_of_4">
+				    <h3> 1.6 Gin Tonic </h3> 
+				    <div class="overlay" style="background-color:#f5f5f5;" >
+				    <div class="text" style="color:#141414;">
+	                         	<li> Dry Gin 45ml </li> 
+							    <li> Tonic Water </li> 
+							    <li> Lime Slice or Cut (optional) </li> 
+							    <li> Made by <i>Build</i> </li>
+							    <br> 
+							    <i>  Made with gin and tonic water poured over ice and garnished with a slice or cut of lime. </i>
+							</div>
+	                    </div>
+				    <img src="img/gin_Tonic.png" height="62.5%" width="62.5%">
+					</div>
+					<div class="col span_1_of_4">
+				    <h3> 1.7 Gimlet </h3> 
+				    <div class="overlay" style="background-color:#8da14a;" >
+				    <div class="text">
+	                         	<li> Dry Gin 45ml </li> 
+							    <li> Lime Juice 15ml </li> 
+							    <li> Simple Syrup </li> 
+							    <li> Made by <i>Shake</i> </li>
+							    <br>
+							    <i> Turns to Vodka Gimlet by using Vodka instead of Dry Gin. Turns to Gimlet highball by adding Sparkling Water. Turns to Nobunaga by using Grenadine Syrup instead of Simple Syrup.</i>
+							</div>
+	                    </div>
+				    <img src="img/gimlet.png" height="66.7%" width="66.7%">
+					</div>
+					<div class="col span_1_of_4">
+				    <h3> 1.8 Pink Pussycat </h3> 
+				    <div class="overlay" style="background-color:#e11b16;" >
+				    <div class="text">
+	                         	<li> Dry Gin 20ml </li> 
+							    <li> Pineapple Juice 20ml </li> 
+							    <li> Grapefruit Juice 30ml </li> 
+							    <li> Grenadine Syrup 2tsp </li>
+							    <li> Made by <i>Shake</i> </li>
+							    <br> 
+							    <i> Gin and grapefruit juice go perfectly together in this sweet, pink-hued cocktail.</i> 
+							</div>
+	                    </div>
+				    <img src="img/pink_Pussycat.png" height="100%" width="100%">
+					</div>
+		        </div>
+	    </div> 
+	    <div>
+		    <br>  
+		    <div class="section group">
+			    <h2>Vodka-Based</h2>
+	        </div>
+	        <br> 
+			<div class="section group">
+   					<div class="col span_1_of_4">
+				    <h3> 2.1 Moscow Mule </h3> 
+				    <div class="overlay" style="background-color:#dd763b;" >
+				    <div class="text">
+	                         	<li> Vodka 45ml </li> 
+							    <li> Lime Juice 15ml </li> 
+							    <li> Ginger Ale properly </li> 
+							    <li> Lime 3 cuts </li> 
+							    <li> Mint (optional) </li> 
+							    <li> Made by <i>Build</i>, decorate Lime properly</li>
+							    <br>
+							    <i> Typical Vodka-based cocktail. Originally Ginger Beer was used instead of Ginger Ale.</i>
+							</div>
+	                    </div>
+				    <img src="img/moscow_Mule.png" height="85%" width="85%">
+					</div>
+					<div class="col span_1_of_4">
+				    <h3> 2.2 Vodka Gimlet </h3> 
+				    <div class="overlay" style="background-color:#ece9e0;" >
+				    <div class="text" style="color:#141414;">
+	                         	<li> Vodka 45ml </li> 
+							    <li> Lime Juice 15ml </li> 
+							    <li> Simple Syrup 1-3tsp </li> 
+							    <li> Made by <i>Shake</i> </li>
+							    <br>
+							    <i> Turns to Gimlet by using Dry Gin instead of Vodka.</i>
+							</div>
+	                    </div>
+				    <img src="img/vodka_Gimlet.png" height="62.5%" width="62.5%">
+					</div>
+					<div class="col span_1_of_4">
+				    <h3> 2.3 Kamikaze </h3> 
+				    <div class="overlay" style="background-color:#bbd370;" >
+				    <div class="text">
+	                         	<li> Dry Gin 45ml </li> 
+							    <li> White Curaçao 20ml </li> 
+							    <li> Lime Juice 20ml </li> 
+							    <li> Made by <i>Shake</i> </li>
+							    <br>
+							    <i> Turns to Classic Kamikaze by changing fraction to 9:1:3 and using cocktail glass.</i>
+							</div>
+	                    </div>
+				    <img src="img/kamikaze.png" height="66.7%" width="66.7%">
+					</div>
+					<div class="col span_1_of_4">
+				    <h3> 2.4 Screwdriver </h3> 
+				    <div class="overlay" style="background-color:#e2a11e;" >
+				    <div class="text">
+	                         	<li> Vodka 45ml</li> 
+							    <li> Orange Juice 75ml </li> 
+							    <li> Maraschino Cherry (optional) </li> 
+							    <li> Made by <i>Shake</i> </li>
+							    <br>
+							    <i>The origin of the name is that it was originally build with a screwdriver. Turns to Creamy Driver by adding Sugar (1tsp) and Egg Yellow.</i>
+							</div>
+	                    </div>
+				    <img src="img/screwdriver.png" height="90%" width="90%">
+					</div>
+			</div>     
+			<div class="section group">
+					<div class="col span_1_of_4">
+				    <h3> 2.5 Balalaika </h3> 
+				    <div class="overlay" style="background-color:#f0e8bf;" >
+				    <div class="text" style="color:#141414;">
+	                         	<li> Vodka 30ml </li> 
+							    <li> White Curaçao 15ml </li> 
+							    <li> Lemon Juice 15ml </li> 
+							    <li> Made by <i>Shake</i> </li>
+							    <br>
+							    <i> Balalaika is a Russian stringed instrument that is triangular like cocktail glass. Turns to Japanese White Lady by using Dry Gin instead of Vodka.</i>
+							</div>
+	                    </div>
+				    <img src="img/balalaika.png" height="70%" width="70%">
+					</div>
+			</div>
+		</div>
+		<div>
+			 <br>  
+		    <div class="section group">
+			    <h2>Sake-Based</h2>
+	        </div>
+	        <br>
+		    <div class="section group">
+			        <div class="col span_1_of_4">
+				    <h3> 3.1 Smurai 侍　</h3> 
+				    <div class="overlay" style="background-color:#739900;" >
+				    <div class="text">
+	                         	<li> Sake 45ml </li> 
+							    <li> Lime Juice 15ml </li> 
+							    <li> Lemon Juice 1tsp </li> 
+							    <li> Made by <i>Stir</i> </li>
+							    <br>
+							    <i> Simple cocktail but sharply refleshing tast of Sake is well developed.</i>
+							</div>
+	                    </div>
+				    <img src="img/smurai_侍.png" height="58.5%" width="58.5%">
+					</div>
+					<div class="col span_1_of_4">
+				    <h3> 3.2 Sakenic </h3> 
+				    <div class="overlay" style="background-color:#f8fff3;" >
+				    <div class="text" style="color:#141414;">
+	                         	<li> Sake 60ml </li> 
+							    <li> Tonic Water </li> 
+							    <li> Sparkling Water </li>
+							    <li> Orange Peel (optional) </li>  
+							    <li> Made by <i>Build</i> w/ the ratio 1:1 of Tonic and Sparkling Waters. </li>
+							    <br>
+							    <i> Maintains the flavor of Sake but at the same time soothing taste in your throat.</i>
+							</div>
+	                    </div>
+				    <img src="img/sakenic.png" height="72.5%" width="72.5%">
+					</div> 
+					<div class="col span_1_of_4">
+				    <h3> 3.3 Sake Sour </h3> 
+				    <div class="overlay" style="background-color:#f1fcdd;" >
+				    <div class="text" style="color:#141414">
+	                         	<li> Sake 45ml </li> 
+							    <li> Lemon Juice 15ml </li> 
+							    <li> Sparkling Water </li>
+							    <li> Simple Syrup 1tsp </li> 
+							    <li> Lemon slice / Maraschino Cherry (optional)</li>
+							    <li> Made by <i>Build</i> </li>
+							    <br>
+							    <i> In fantastic weather, fill a sour glass with ice (large ice cubes are better) and add all ingredients. </i>
+							</div>
+	                    </div>
+				    <img src="img/sake_Sour.png" height="72.5%" width="72.5%">
+					</div> 
+					<div class="col span_1_of_4">
+				    <h3> 3.4 Nadeshiko 撫子 </h3> 
+				    <div class="overlay" style="background-color:#e35757;" >
+				    <div class="text">
+	                         	<li> Sake 45ml </li> 
+							    <li> Grenadine Syrup 2tsp </li> 
+							    <li> Lemon Juice 1tbsp </li> 
+							    <li> Simple Syrup 1tsp </li> 
+							    <li> Egg White 1/3 </li> 
+							    <li> Made by <i>Shake</i> </li>
+							    <br>
+							    <i> Nadeshiko means pink flower, specifically “Dianthus superbus." It also means Yamato Nadeshiko (大和撫子), a Japanese term used to praise the unadorned, clean beauty, of a woman. </i>
+							</div>
+	                    </div>
+				    <img src="img/nadeshiko_撫子.png" height="98%" width="98%">
+					</div> 
+			 </div>
+			 <div class="section group">
+					<div class="col span_1_of_4">
+				    <h3> 3.5 Salty Grapefruit </h3> 
+				    <div class="overlay" style="background-color:#cecb45;" >
+				    <div class="text">
+	                         	<li> Sake 45ml </li> 
+							    <li> Grapefruit Juice 75ml </li> 
+							    <li> Salt properly </li> 
+							    <li> Made by <i>Stir</i> </li>
+							    <br>
+							    <i> Turns to Salty Dog by using Vodka instead of Sake.</i>
+							</div>
+	                    </div>
+				    <img src="img/salty_Grapefruit.png" height="72.5%" width="72.5%">
 
-<div id="drinkmenu">
-    &#8251; <a href="ListedDrinks.pdf">Here</a> is the full list of today's possible drinks
-    <hr/>
-</div>
-
-<!-- Header -->
-<div class="header">
-  <h1> <img src="img/title.png" style="width:100%"></h1>
-  <p class="subtitle"> Cocktails created by Masaaki Tomii </p>
-</div>
-
-<!-- Photo Grid -->
-<div class="row"> 
-  <div class="column"> 
-    <img src="img/drink1.jpg" style="width:100%">
-         <h1 id="drink1"> White Lady (Japanese) </h1> 
-         <ul id="list1" class= "ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul> 
-    <img src="img/drink2.jpg" style="width:100%">
-          <h1 id="drink2"> White Lady European Original** </h1> 
-          <ul id="list2" class= "ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul> 
-    <img src="img/drink3.jpg" style="width:100%">
-         <h1 id="drink3" > Pink Lady </h1> 
-          <ul id="list3" class= "ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul> 
-
-    <img src="img/drink4.jpg" style="width:100%">
-         <h1 id="drink4" > Waikiki Beachcomber </h1> 
-          <ul id="list4" class= "ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul> 
-
-    <img src="img/drink5.jpg" style="width:100%">
-         <h1 id="drink5" > Grenadine Fizz </h1> 
-          <ul id="list5" class= "ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul> 
-
-    <img src="img/drink6.jpg" style="width:100%">
-         <h1 id="drink6" > Gin Tonic </h1> 
-          <ul id="list6" class= "ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul> 
-
-    <img src="img/drink7.jpg" style="width:100%">
-         <h1 id="drink6" > Gimlet </h1> 
-          <ul id="list7" class= "ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul> 
-
-    <img src="img/drink8.jpg" style="width:100%">
-          <h1 id="drink7"> Pink Pussycat </h1> 
-          <ul id="list8" class= "ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul> 
-
-    <img src="img/drink9.jpg" style="width:100%">
-         <h1 id="drink9" > Moscow Mule </h1> 
-          <ul id="list9" class= "ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul> 
-
- </div>
-<div class="column"> 
-    <img src="img/drink1.jpg" style="width:100%">
-         <h1 id="drink10"> Vodka Gimlet </h1> 
-          <ul id="list10" class= "ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul> 
-    <img src="img/drink2.jpg" style="width:100%">
-        <h1 id="drink11"> Kamikaze </h1>
-          <ul id="list11" class= "ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul>  
-    <img src="img/drink3.jpg" style="width:100%"> 
-         <h1 id="drink12"> Screw Driver </h1> 
-          <ul id="list12" class= "ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul> 
-
-    <img src="img/drink4.jpg" style="width:100%">
-         <h1 id="drink13"> Balalaika </h1> 
-          <ul id="list13" class= "ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul> 
-
-    <img src="img/drink5.jpg" style="width:100%">
-         <h1 id="drink14"> Smurai </h1> 
-          <ul id="list14" class= "ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul> 
-
-    <img src="img/drink6.jpg" style="width:100%">
-         <h1 id="drink15"> Sakenic </h1> 
-          <ul id="list15" class= "ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul> 
-
-    <img src="img/drink7.jpg" style="width:100%">
-         <h1 id="drink16"> Sake Sour </h1> 
-          <ul id="list16" class= "ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul> 
-
-    <img src="img/drink8.jpg" style="width:100%">
-         <h1 id="drink17"> Sake Sour </h1> 
-          <ul id="list17" class= "ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul> 
-
-    <img src="img/drink9.jpg" style="width:100%">
-         <h1 id="drink18"> Nadeshiko </h1> 
-          <ul id="list18" class= "ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul> 
-
- </div><div class="column"> 
-    <img src="img/drink1.jpg" style="width:100%">
-         <h1 id="drink19"> Salty Grapefruit </h1> 
-          <ul id="list19" class= "ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul> 
-    <img src="img/drink2.jpg" style="width:100%">
-        
-         <h1 id="drink20"> Orange Breeze </h1> 
-          <ul id="list20" class= "ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul> 
-    <img src="img/drink3.jpg" style="width:100%">
-         <h1 id="drink21"> Cinderella </h1> 
-          <ul id="list21" class= "ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul> 
-
-    <img src="img/drink4.jpg" style="width:100%">
-         <h1 id="drink22"> Fruit Punch </h1> 
-          <ul id="list22" class= "ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul> 
-
-    <img src="img/drink5.jpg" style="width:100%">
-         <h1 id="drink23"> Shirley Temple </h1> 
-          <ul id="list23" class= "ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul> 
-
-    <img src="img/drink6.jpg" style="width:100%">
-         <h1 id="drink24"> Saratoga Cooler (Non-Alcohol Moscow Mule)</h1> 
-          <ul id="list24" class= "ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul> 
-
-    <img src="img/drink7.jpg" style="width:100%">
-         <h1 id="drink25"> Summer Delight </h1> 
-          <ul id="list25" class= "ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul> 
-
-    <img src="img/drink8.jpg" style="width:100%">
-         <h1 id="drink26"> Pussycat </h1> 
-          <ul id="list26" class= "ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul> 
-
-    <img src="img/drink9.jpg" style="width:100%">
-         <h1 id="drink27"> Yellow Over Blue </h1> 
-          <ul id="list27" class= "ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul> 
-
- </div><div class="column"> 
-    <img src="img/drink1.jpg" style="width:100%">
-         <h1 id="drink28"> Hawaiian </h1> 
-          <ul id="list28" class= "ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul> 
-    
-    <img src="img/drink2.jpg" style="width:100%">
-          <h1 id="drink29"> Volcanic </h1> 
-          <ul id="list29" class= "ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul> 
-    
-    <img src="img/drink3.jpg" style="width:100%">
-         <h1 id="drink30"> Mimosa </h1> 
-          <ul id="list30" class="ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul> 
-
-    <img src="img/drink4.jpg" style="width:100%">
-         <h1 id="drink31"> Bloody Mary </h1> 
-          <ul id="list31" class= "ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul> 
-
-    <img src="img/drink5.jpg" style="width:100%">
-         <h1 id="drink32"> Godfather </h1> 
-          <ul id="list32" class= "ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul> 
-
-    <img src="img/drink6.jpg" style="width:100%">
-          <h1 id="drink33"> Long Island Iced Tea </h1> 
-          <ul id="list33" class= "ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul> 
-
-    <img src="img/drink7.jpg" style="width:100%">
-         <h1 id="drink34"> Electric Eel </h1> 
-          <ul id="list34" class= "ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul> 
-
-    <img src="img/drink8.jpg" style="width:100%">
-         <h1 id="drink35"> Tom Collins </h1> 
-          <ul id="list35" class= "ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul> 
-
-    <img src="img/drink9.jpg" style="width:100%">
-         <h1 id="drink36"> Almost Famous </h1> 
-          <ul id="list36" class= "ingredientlist"> 
-            <li> Ingredient 1 </li> 
-            <li> Ingredient 2 </li> 
-            <li> Ingredient 3 </li> 
-            <li> Ingredient 4 </li> 
-            <li> Ingredient 5 </li>
-         </ul> 
-
-    </div>
-</div> 
-
-<footer class="footer"> 
+					</div> 
+					<div class="col span_1_of_4">
+				    <h3> 3.6 Orange Breeze </h3> 
+				    <div class="overlay" style="background-color:#e2a11e;" >
+				    <div class="text">
+	                         	<li> Sake 45ml </li> 
+							    <li> Orange Juice 15ml </li> 
+							    <li> Tonic Water </li> 
+							    <li> Made by <i>Build</i> </li>
+							    <br>
+							    <i> Build in a large goblet with ice and stir. </i>
+							</div>
+	                    </div>
+				    <img src="img/orange_Breeze.png" height="72.5%" width="72.5%">
+					</div> 
+			</div> 
+		</div> 
+		<div>
+		     <br>  
+		    <div class="section group">
+			    <h2>Non-Alcoholic</h2>
+	        </div>
+	        <br>
+	        <div class="section group">
+					<div class="col span_1_of_4">
+				    <h3> 4.1 Cinderella </h3> 
+				    <div class="overlay" style="background-color:#ce5711;" >
+				    <div class="text">
+	                         	<li> Orange Juice 20ml </li> 
+							    <li> Pineapple 20ml </li> 
+							    <li> Lemon Juice 20ml </li> 
+							    <li> Made by <i>Shake</i> </li>
+							    <br>
+							    <i> Cooking by shake enables non-drinkers to enjoy the taste of cocktails. Sweet even compared to other non-alcohol cocktails.</i>
+							</div>
+	                    </div>
+				    <img src="img/cinderella.png" height="66.7%" width="66.7%">
+					</div> 
+					<div class="col span_1_of_4">
+				    <h3> 4.2 Fruit Punch </h3> 
+				    <div class="overlay" style="background-color:#ea424e;" >
+				    <div class="text">
+	                         	<li> Orange Juice 45ml </li> 
+							    <li> Pineapple Juice 15ml </li> 
+							    <li> Lemon Juice Syrup </li> 
+							    <li> Grenadine Syrup 3 dash </li> 
+							    <li> Made by <i>Shake</i> </li>
+							    <br>
+							    <i> Full of sweet, sour and refreshing taste of orange, pineapple and so on. Enjoyable even for non-drinkers.</i>
+							</div>
+	                    </div>
+				    <img src="img/fruit_Punch.png" height="66.7%" width="66.7%">
+					</div> 
+					<div class="col span_1_of_4">
+				    <h3> 4.3 Shirley Temple </h3> 
+				    <div class="overlay" style="background-color:#de0000;" >
+				    <div class="text">
+	                         	<li> Ginger Ale 130ml </li> 
+							    <li> Grenadine Syrup 20ml </li> 
+							    <li> Lemon 1 cut </li> 
+							    <li> Made by <i>Build</i>, decorate lemon properly.</li>
+							    <br>
+							    <i> Sweet and refreshing, perfect virgin cocktail for all occassions.</i>
+							</div>
+	                    </div>
+				    <img src="img/shirley_Temple.png" height="62.5%" width="62.5%">
+					</div> 
+					<div class="col span_1_of_4">
+				    <h3> 4.4 Saratoga Cooler </h3> 
+				    <div class="overlay" style="background-color:#f5ffe2;" >
+				    <div class="text" style="color:#141414;">
+	                         	<li> Ginger Ale properly </li> 
+							    <li> Simple Syrup 1tsp </li> 
+							    <li> Lime Juice 20ml </li>
+							    <li> Lime 3 cuts </li> 
+							    <li> Made by <i>Build</i>, decorate Lime properly </li>
+							    <br>
+							    <i> Turns to Moscow Mule by adding Vodka</i>
+							</div>
+	                    </div>
+				    <img src="img/saratoga_Cooler.png" height="66.7%" width="66.7%">
+					</div> 
+			</div>
+		    <div class="section group">
+					<div class="col span_1_of_4">
+				    <h3> 4.5 Summer Delight </h3> 
+				    <div class="overlay" style="background-color:#b20331;" >
+				    <div class="text">
+	                         	<li> Lime Juice 30-40ml </li> 
+							    <li> Grenadine Syrup 15ml </li> 
+							    <li> Simple Syrup 2tsp </li> 
+							    <li> Sparkling Water </li>
+							    <li> Made by <i>Shake</i> w/o water and <i> Build </i> </li>
+							    <br>
+							    <i> Warm weather brings out the bubbles, citrus and herbs in cocktails. </i>
+							</div>
+	                    </div>
+				    <img src="img/summer_Delight.png" height="85%" width="85%">
+					</div> 
+					<div class="col span_1_of_4">
+				    <h3> 4.6 Pussycat </h3> 
+				    <div class="overlay" style="background-color:#ff8b61;" >
+				    <div class="text">
+	                         	<li> Orange Juice 60ml </li> 
+							    <li> Pineapple Juice 60ml </li> 
+							    <li> Grapefruit Juice 60ml </li> 
+							    <li> Grenadine Syrup 3tsp </li> 
+							    <li> Made by <i>Shake</i> </li>
+							    <br>
+							    <i> Cooking by shake enables non-drinkers to enjoy the taste of cocktails. Sweet even compared to other non-alcohol cocktails.</i>
+							</div>
+	                    </div>
+				    <img src="img/pussycat.png" height="76%" width="76%">
+					</div> 
+		    </div> 
+		</div> 
+	</div> 
+<div id="footer"> 
   <p> Copyright &copy; Masaaki's Cocktails List 2018 </p> 
-</footer> 
-
-
+</div> 
 </body>
 </html>
-
