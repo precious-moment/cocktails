@@ -1,0 +1,113 @@
+/*  GRID OF FOUR   ============================================================================= */
+
+	
+.span_4_of_4 {
+	width: 100%;
+	height:100%; 
+}
+
+.span_3_of_4 {
+	width: 74.6%; 
+	height: 74.6%;
+}
+
+.span_2_of_4 {
+	width: 49.2%; 
+    height: 49.2%;
+} 
+
+.span_1_of_4 {
+	width: 23.8%; 
+    height: 23.8%;
+}
+
+.span_1_of_4:hover .overlay {
+	width: 23.8%;
+	height: 50%;
+    opacity: 1;
+    z-index: 1;
+}
+
+#title {
+	font-size:24px;
+}
+
+#banner {
+	width: 100%;
+	height: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+	.span_4_of_4 {
+		width: 33.3%;
+		height: 33.3%; 
+	}
+	.span_3_of_4 {
+		width: 33.3%; 
+		height: 33.3%; 
+	}
+	.span_2_of_4 {
+		width: 33.3%; 
+	    height: 33.3%; 
+	}
+	.span_1_of_4 {
+		width: 33.3%;
+	    height: 33.3%; 
+	}
+
+	.span_1_of_4:hover .overlay {
+		width: 33.3%;
+		height: 50%;
+    	opacity: 1;
+    	z-index: 1;
+    }
+
+    .overlay {
+		width: 33.3%;
+		height: 50%;
+    	opacity: 1;
+    	font-size:14px;
+    	z-index: 1;
+    }
+
+	#title {
+		font-size:15px;
+	}	
+
+	#banner { 
+        width: 100%;
+        height: 100%;
+	}
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.span_4_of_4 {
+		width: 100%;
+		height: 100%; 
+	}
+	.span_3_of_4 {
+		width: 100%; 
+		height: 100%; 
+	}
+	.span_2_of_4 {
+		width: 100%; 
+	    height: 100%; 
+	}
+	.span_1_of_4 {
+		width: 100%;
+	    height: 100%; 
+	}
+   
+	.span_1_of_4:hover .overlay {
+		width: 85%;
+		height: 50%;
+    	opacity: 1;
+    	z-index: 1;
+    }
+
+	#title {
+		font-size:15px;
+	}	
+}
+
