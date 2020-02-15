@@ -139,12 +139,13 @@ my $out_dir = sprintf("%s/%4d.%02d.%02d/",
 print (`cp $pdf_fname ../`);
 print (`mkdir -p $out_dir`);
 print (`mv $tex_fname $pdf_fname $out_dir`);
-foreach my $tail (".aux",".log",".synctex.gz") {
+foreach my $tail (".aux",".log",".synctex.gz",".toc") {
   my $del_fname = $fname_header . $tail;
   unlink($del_fname);
 }
 
 $pdf_fname = $out_dir . $pdf_fname;
 print (`open $pdf_fname`);
+print "PDF file saved on $pdf_fname\n";
 
 exit 0;
