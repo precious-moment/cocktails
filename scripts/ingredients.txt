@@ -32,3 +32,36 @@
 #\strawberry
 \cherry
 #\mintcherry
+
+### Description of symbols
+#
+# \gin = Dry Gin
+# \vodka = Vodka
+# \teq = Tequila
+# \rum = White Rum, \lrum = Light Rum, \bacardi = Bacardi(brand of Rum)
+# \whiskey = Whiskey, \bourbon = Bourbon, \rye = \Rye, \scotch = Scotch
+# \brandy = Brandy, \applejack = Apple Jack
+# \sake = (Japanese) Sake
+# \rw = Red Wine, \ww = White Wine, \champagne is Champagne
+# \vermouth = Dry Vermouth, \svermouth = Sweet Vermouth, \campari = Campari
+# \cc = Creme de Cassis, \kahlua = Kahlua, \ob = Orange Bitters
+# \oc = Orange Curacao, \wc = White Curacao, \coitreau = Cointreau, \bc = Blue Curacao
+# \kummel = Kummel
+# \beer = Beer (need more classification)
+#
+# \lj = Lemon Juice, \limej = Lime Juice
+# \oj = Orange Juice, \gj = Grapefruit Juice, \pj = Pineapple Juice
+# \mj = Mango Juice, \cj = Cramberry Juice
+#
+# \soda = Sparkling Water, \tw = Tonic Water
+# \llsoda = Lemon-Lime Soda (can be made from \lj, \limj and \soda)
+# \ga = Ginger Ale, \cola = Coke
+#
+# \gs = Grenadine Syrup, \rs = Raspberry Syrup, \ab = Aromatic Bitters
+# \clime = Cordial Lime, \honey = Honey
+#
+# \milk = Milk, \yogurt = Yogurt
+# \ew = Egg White, \ey = Egg Yellow
+# \olive = Olive
+# \orange = Orange, \lemon = Lemon, \lime = Lime, \mint = Mint
+# \strawberry = Strawberry, \cherry = Maraschino Cherry, \mintcherry = Mint Cherry

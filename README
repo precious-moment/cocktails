@@ -1,0 +1,32 @@
+This package creates a PDF list of possible cocktails that you can make with the ingredients you currently have.  While this package also accommodates its own recipe of each cocktail and very limited number of cocktails have been registered, you can add any new cocktails that have not been registered here.  So far, Gin-, Vodka, Tequila- and Rum-based cocktails have been mainly focused.
+
+This package also organizes an HTML file that introduces my favorite cocktails.  The version on github is found at https://precious-moment.github.io/cocktails/index.html , which is still on construction.  Use and edit this HTML file only for your personal purpose.
+
+How to create a list of possible cocktails
+
+  0. Install a LaTeX compiler
+
+  1. Change directory to scripts/ (cd scripts/)
+
+  2. Edit ListPossibleDrinks.in
+    * 'latex_command:' specify your favorit LaTeX compiler
+    * 'latex_flags:' write LaTeX compile options as you like
+      - the script runs '$latex_command $latex_flags {latex file}' twice
+      - edit ListPossibleDrinks.pl in case you want to change a way of compiling
+    * 'bases:' write all cocktail bases you want to involve
+      - each cocktail base has to be separated by '|'
+      - each cocktail base has the form {$1}/{$2}:
+        $1 = name of a directory under scripts, which accommodates information of cocktails
+	$2 = name of the cocktail base that shows up on the heading of a section in PDF file
+    * 'out_dir:' write the directory in which the PDF file will be created
+    * other parts may not be recommended to change
+
+  3. Edit ingredients.txt or the file you indicated as 'ingred_fname' in 2.
+    * each symbol \** corresponds to an ingredient.  description of symbols is shown in the same text file
+    * all ingredients you carrently don't have should be deleted or commented out by '#'
+
+  4. execute ./ListPossibleDrinks.pl
+
+If you need more help you may want to contact me Masaaki Tomii<masaaki.tomii1987@gmail.com>
+
+Have a precious moment!

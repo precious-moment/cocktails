@@ -127,7 +127,6 @@ print "LaTeX source produced\n";
 
 print (`$input_obj->{latex_command} $input_obj->{latex_flags} $fname_header > tmp`);
 print (`$input_obj->{latex_command} $input_obj->{latex_flags} $fname_header > tmp`);
-#print (`ptex2pdf -l -ot "--shell-escape -synctex=1 -file-line-error" $fname_header > tmp`);
 unlink("tmp");
 print "LaTeX compile successful!\n";
 
