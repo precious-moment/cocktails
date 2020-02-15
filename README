@@ -1,6 +1,6 @@
-This package creates a PDF list of possible cocktails that you can make with the ingredients you currently have.  While this package also accommodates its own recipe of each cocktail and very limited number of cocktails have been registered, you can add any new cocktails that have not been registered here.  So far, Gin-, Vodka, Tequila- and Rum-based cocktails have been mainly focused.
+This package creates a list of possible cocktails that you can make with the ingredients you currently have, in a PDF format.  While this package also accommodates its own recipe of each cocktail and very limited number of cocktails have been registered, you can add any new cocktails that have not been registered here.  So far we have mainly focused on registering Gin-, Vodka, Tequila- and Rum-based cocktails.
 
-This package also organizes an HTML file that introduces my favorite cocktails.  The current version on github is found at https://precious-moment.github.io/cocktails/index.html , which is still on construction.  Use and edit this HTML file only for your personal purpose.
+This package also organizes an HTML file that introduces our favorite cocktails.  The current version on github is found at https://precious-moment.github.io/cocktails/index.html , which is still on construction.  Use and edit this HTML file only for your personal purpose.
 
 How to create a list of possible cocktails
 
