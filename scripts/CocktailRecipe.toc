@@ -1,0 +1,104 @@
+\contentsline {section}{\numberline {1}Gin-Based}{4}% 
+\contentsline {subsection}{\numberline {1.1}Dry Martini $\openbigstar $}{4}% 
+\contentsline {subsection}{\numberline {1.2}Parisian}{4}% 
+\contentsline {subsection}{\numberline {1.3}Saketini}{4}% 
+\contentsline {subsection}{\numberline {1.4}White Lady (Japanese)}{4}% 
+\contentsline {subsection}{\numberline {1.5}White Lady (European Original) $\openbigstar \openbigstar $}{5}% 
+\contentsline {subsection}{\numberline {1.6}Pink Lady}{5}% 
+\contentsline {subsection}{\numberline {1.7}Classic Pink Lady}{5}% 
+\contentsline {subsection}{\numberline {1.8}Waikiki Beachcomber}{5}% 
+\contentsline {subsection}{\numberline {1.9}Hawaiian}{6}% 
+\contentsline {subsection}{\numberline {1.10}Wallick}{6}% 
+\contentsline {subsection}{\numberline {1.11}A1 $\openbigstar $}{6}% 
+\contentsline {subsection}{\numberline {1.12}Rosenkavalier $\openbigstar $}{6}% 
+\contentsline {subsection}{\numberline {1.13}Silver Bullet}{7}% 
+\contentsline {subsection}{\numberline {1.14}Grenadine Fizz}{7}% 
+\contentsline {subsection}{\numberline {1.15}Negroni}{7}% 
+\contentsline {subsection}{\numberline {1.16}Nightmare of Red}{7}% 
+\contentsline {subsection}{\numberline {1.17}Queen Elizabeth II}{8}% 
+\contentsline {subsection}{\numberline {1.18}Gin Tonic}{8}% 
+\contentsline {subsection}{\numberline {1.19}Gimlet}{8}% 
+\contentsline {subsection}{\numberline {1.20}Ieyasu(家康)}{8}% 
+\contentsline {subsection}{\numberline {1.21}Pink Pussycat $\forall $}{9}% 
+\contentsline {section}{\numberline {2}Vodka-Based}{10}% 
+\contentsline {subsection}{\numberline {2.1}Moscow Mule}{10}% 
+\contentsline {subsection}{\numberline {2.2}Vodka Gimlet}{10}% 
+\contentsline {subsection}{\numberline {2.3}Kamikaze}{10}% 
+\contentsline {subsection}{\numberline {2.4}Tovarisch}{10}% 
+\contentsline {subsection}{\numberline {2.5}Screwdriver}{11}% 
+\contentsline {subsection}{\numberline {2.6}Italian Champagne}{11}% 
+\contentsline {subsection}{\numberline {2.7}Yukiguni}{11}% 
+\contentsline {subsection}{\numberline {2.8}Salty Dog}{11}% 
+\contentsline {subsection}{\numberline {2.9}Balalaika}{12}% 
+\contentsline {subsection}{\numberline {2.10}Russian Ballet}{12}% 
+\contentsline {section}{\numberline {3}Tequila-Based}{13}% 
+\contentsline {subsection}{\numberline {3.1}Margarita}{13}% 
+\contentsline {subsection}{\numberline {3.2}Frozen Margarita}{13}% 
+\contentsline {subsection}{\numberline {3.3}Ice Breaker}{13}% 
+\contentsline {subsection}{\numberline {3.4}French Cactus}{13}% 
+\contentsline {subsection}{\numberline {3.5}Conchita}{14}% 
+\contentsline {subsection}{\numberline {3.6}Cyclamen}{14}% 
+\contentsline {subsection}{\numberline {3.7}Tequila Sunrise}{14}% 
+\contentsline {subsection}{\numberline {3.8}Broadway Thirst}{14}% 
+\contentsline {subsection}{\numberline {3.9}Matador $\forall $}{15}% 
+\contentsline {subsection}{\numberline {3.10}Tequila Daisy}{15}% 
+\contentsline {subsection}{\numberline {3.11}Mexican}{15}% 
+\contentsline {subsection}{\numberline {3.12}El Dorado}{15}% 
+\contentsline {subsection}{\numberline {3.13}Tequila Sunstroke}{16}% 
+\contentsline {subsection}{\numberline {3.14}Tequila Martini}{16}% 
+\contentsline {subsection}{\numberline {3.15}El Diablo}{16}% 
+\contentsline {subsection}{\numberline {3.16}Mexican El Diablo}{16}% 
+\contentsline {section}{\numberline {4}Rum-Based}{17}% 
+\contentsline {subsection}{\numberline {4.1}Bacardi}{17}% 
+\contentsline {subsection}{\numberline {4.2}Larchmont}{17}% 
+\contentsline {subsection}{\numberline {4.3}Tonga Punch}{17}% 
+\contentsline {subsection}{\numberline {4.4}Daiquiri}{17}% 
+\contentsline {subsection}{\numberline {4.5}Acapulco (Japanese)}{18}% 
+\contentsline {subsection}{\numberline {4.6}El Presidente (Japanese)}{18}% 
+\contentsline {subsection}{\numberline {4.7}El Presidente (Cuban Original)}{18}% 
+\contentsline {subsection}{\numberline {4.8}XYZ}{18}% 
+\contentsline {subsection}{\numberline {4.9}Mojito $\openbigstar \openbigstar $}{19}% 
+\contentsline {section}{\numberline {5}Wine-Based}{20}% 
+\contentsline {subsection}{\numberline {5.1}American Lemonade}{20}% 
+\contentsline {subsection}{\numberline {5.2}Operator}{20}% 
+\contentsline {subsection}{\numberline {5.3}Kir}{20}% 
+\contentsline {subsection}{\numberline {5.4}Kir Royale}{20}% 
+\contentsline {subsection}{\numberline {5.5}Sangria}{21}% 
+\contentsline {section}{\numberline {6}Beer-Based}{22}% 
+\contentsline {subsection}{\numberline {6.1}Negroni}{22}% 
+\contentsline {subsection}{\numberline {6.2}Irish Back Fire}{22}% 
+\contentsline {section}{\numberline {7}Sake-Based}{23}% 
+\contentsline {subsection}{\numberline {7.1}Smurai (侍)}{23}% 
+\contentsline {subsection}{\numberline {7.2}Sakenic}{23}% 
+\contentsline {subsection}{\numberline {7.3}Sake Sour}{23}% 
+\contentsline {subsection}{\numberline {7.4}Nadeshiko (撫子)}{23}% 
+\contentsline {subsection}{\numberline {7.5}Seiryu (清流)}{24}% 
+\contentsline {subsection}{\numberline {7.6}Sake-Yogurt}{24}% 
+\contentsline {subsection}{\numberline {7.7}Yogurt-Pine}{24}% 
+\contentsline {subsection}{\numberline {7.8}Shirayukihime (白雪姫, Snow White)}{24}% 
+\contentsline {subsection}{\numberline {7.9}Salty Grapefruit}{25}% 
+\contentsline {subsection}{\numberline {7.10}Orange Breeze}{25}% 
+\contentsline {subsection}{\numberline {7.11}Saquerinha}{25}% 
+\contentsline {subsection}{\numberline {7.12}Sake Champagne Mojito}{25}% 
+\contentsline {section}{\numberline {8}Others}{26}% 
+\contentsline {subsection}{\numberline {8.1}Acapulco (Mexican Original)}{26}% 
+\contentsline {subsection}{\numberline {8.2}Vermouth-Cura\c {c}ao}{26}% 
+\contentsline {subsection}{\numberline {8.3}Beretta}{26}% 
+\contentsline {subsection}{\numberline {8.4}Americano}{26}% 
+\contentsline {subsection}{\numberline {8.5}Spumoni}{27}% 
+\contentsline {subsection}{\numberline {8.6}Pinkey Sour}{27}% 
+\contentsline {subsection}{\numberline {8.7}Long Island Icetea}{27}% 
+\contentsline {subsection}{\numberline {8.8}Zeus}{27}% 
+\contentsline {subsection}{\numberline {8.9}Baby Kir}{28}% 
+\contentsline {subsection}{\numberline {8.10}Cassis Milk}{28}% 
+\contentsline {section}{\numberline {9}Non-alcohol}{29}% 
+\contentsline {subsection}{\numberline {9.1}Cinderella}{29}% 
+\contentsline {subsection}{\numberline {9.2}Fruit Punch}{29}% 
+\contentsline {subsection}{\numberline {9.3}Shirley Temple}{29}% 
+\contentsline {subsection}{\numberline {9.4}Saratoga Cooler (Non-Alcohol Moscow Mule)}{29}% 
+\contentsline {subsection}{\numberline {9.5}Virgin Mojito}{30}% 
+\contentsline {subsection}{\numberline {9.6}Summer Delight}{30}% 
+\contentsline {subsection}{\numberline {9.7}Pussycat}{30}% 
+\contentsline {subsection}{\numberline {9.8}Virgin Strawberry Daiquiri}{30}% 
+\contentsline {subsection}{\numberline {9.9}Virgin Strawberry Margarita}{31}% 
+\contentsline {subsection}{\numberline {9.10}Virgin Strawberry Mojito}{31}% 

@@ -1,0 +1,8 @@
+latex_command: ptex2pdf
+latex_flags: -l -ot "--shell-escape -synctex=1 -file-line-error"
+
+bases: GinBase/Gin-Based | VodkaBase/Vodka-Based | TequilaBase/Tequila-Based | RumBase/Rum-Based | WineBase/Wine-Based | SakeBase/Sake-Based | Others/Others | NonAlcohol/Non-Alcohol Cocktails
+
+out_dir: ./PartyMenu
+ingred_fname: ingredients.txt
+out_fname_header: ListedDrinks

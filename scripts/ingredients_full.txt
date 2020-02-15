@@ -1,0 +1,21 @@
+\gin
+\vodka
+\teq
+\rum \lrum \bacardi
+#\whiskey \bourbon \rye \scotch
+#\brandy \applejack
+#\rw \ww \champagne
+\sake
+\vermouth \svermouth \campari
+# \ob \cc
+\oc \wc \cointreau \bc
+\kummel \yl
+#\beer
+\oj \gj \pj \lj \limj #\mj \cj
+\mw
+\soda \tw \ga #\cola \llsoda
+\gs \honey \gumsyrup \sugar \salt #\clime
+# \rs \ab
+\milk \yogurt
+\ew \ey \olive
+\orange \lemon \lime \strawberry \cherry \mintcherry \mint
