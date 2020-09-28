@@ -54,14 +54,17 @@
 # \mj = Mango Juice, \cj = Cramberry Juice
 #
 # \soda = Sparkling Water, \tw = Tonic Water
-# \llsoda = Lemon-Lime Soda (can be made from \lj, \limj and \soda)
+# \llsoda = Lemon-Lime Soda, \ssm = Sweet & Sour Mix
 # \ga = Ginger Ale, \cola = Coke
 #
 # \gs = Grenadine Syrup, \rs = Raspberry Syrup, \ab = Aromatic Bitters
 # \clime = Cordial Lime, \honey = Honey
 #
-# \milk = Milk, \yogurt = Yogurt
+# \milk = Milk, \yogurt = Yogurt, \cococ = Creme de Coconut
 # \ew = Egg White, \ey = Egg Yellow
 # \olive = Olive
-# \orange = Orange, \lemon = Lemon, \lime = Lime, \mint = Mint
+# \orange = Orange, \lemon = Lemon, \lime = Lime, \pineapple = Pineapple, \mint = Mint
 # \strawberry = Strawberry, \cherry = Maraschino Cherry, \mintcherry = Mint Cherry
+#
+# \unbrella = Cocktail Umbrella
+#
