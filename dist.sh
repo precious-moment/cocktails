@@ -8,3 +8,4 @@ rm -f scripts/CocktailRecipe.out
 rm -f scripts/CocktailRecipe.synctex.gz
 rm -f scripts/CocktailRecipe.toc
 rm -rf scripts/PartyMenu/*
+cp scripts/CocktailRecipe.pdf .
