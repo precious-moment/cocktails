@@ -6,32 +6,33 @@
 #\brandy \applejack
 #\rw
 #\rw \ww \champagne
-\ww
-\sake
-#\vermouth \svermouth \campari
-\campari \cc \kahlua
+#\ww
+#\sake
+#\vermouth \svermouth
+#\campari \cc \kahlua
 # \ob \cc \kahlua
-\oc \wc \cointreau
-#\wc \cointreau
+#\oc \wc \cointreau
+\wc \cointreau
 #\bc
 #\kummel \yl
 #\beer
 #\oj \gj \pj \lj \limj #\mj \cj
 \oj \pj \lj \limj
-\mw
-\soda \tw \llsoda \ga
+#\mw
+\soda \tw \ga
+# \llsoda
 #\cola
-\gs \gumsyrup \sugar \salt
-\clime \honey
+\gs \gumsyrup
+\sugar \salt
+#\clime \honey
 # \rs \ab
-\milk \yogurt
-\ew \ey
+#\milk \yogurt
+#\ew \ey
 #\olive
 #\orange \lemon \lime \mint
-\lemon \lime \mint
+\lemon \lime
 #\strawberry
-\cherry
-#\mintcherry
+\cherry \mintcherry
 
 ### Description of symbols
 #
@@ -52,6 +53,8 @@
 # \lj = Lemon Juice, \limej = Lime Juice
 # \oj = Orange Juice, \gj = Grapefruit Juice, \pj = Pineapple Juice
 # \mj = Mango Juice, \cj = Cramberry Juice
+#
+# \mw = Mineral Water
 #
 # \soda = Sparkling Water, \tw = Tonic Water
 # \llsoda = Lemon-Lime Soda, \ssm = Sweet & Sour Mix
