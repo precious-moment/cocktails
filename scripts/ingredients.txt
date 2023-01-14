@@ -10,17 +10,18 @@
 #\sake
 #\vermouth \svermouth
 #\campari \cc \kahlua
-# \ob \cc \kahlua
+# \ob \cc
+\kahlua
 #\oc \wc \cointreau
 \wc \cointreau
-#\bc
+\bc
 #\kummel \yl
 #\beer
 #\oj \gj \pj \lj \limj #\mj \cj
 \oj \pj \lj \limj
 #\mw
 \soda \tw \ga
-# \llsoda
+\llsoda \ssm
 #\cola
 \gs \gumsyrup
 \sugar \salt
@@ -30,9 +31,9 @@
 #\ew \ey
 #\olive
 #\orange \lemon \lime \mint
-\lemon \lime
+\lemon \lime \pineapple
 #\strawberry
-\cherry \mintcherry
+#\cherry \mintcherry
 
 ### Description of symbols
 #
